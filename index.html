@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Loja de Roupas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-color: #f5f5f5;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        section {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+        }
+        h2 {
+            color: #333;
+            border-bottom: 2px solid #e91e63;
+            padding-bottom: 8px;
+        }
+        .produtos {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .produto {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 10px;
+            width: 200px;
+            text-align: center;
+            background: #fafafa;
+        }
+        .produto img {
+            max-width: 100%;
+            border-radius: 6px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: #fff;
+            margin-top: 40px;
+        }
+        form label {
+            display: block;
+            margin-top: 10px;
+        }
+        form input, form textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+        form button {
+            margin-top: 15px;
+            padding: 10px 15px;
+            background-color: #9716ca;
+            border: none;
+            color: #fff;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        form button:hover {
+            background-color: #9d10df;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Loja de Roupas Fashion</h1>
+        <p>Moda que combina com você</p>
+    </header>
+
+    <section id="sobre">
+        <h2>Sobre Nós</h2>
+        <p>Somos uma loja de roupas dedicada a oferecer as últimas tendências da moda com qualidade e preços acessíveis. Nosso objetivo é ajudar você a se vestir bem para todas as ocasiões.</p>
+    </section>
+
+    <section id="servicos-produtos">
+        <h2>Produtos</h2>
+        <div class="produtos">
+            <div class="produto">
+                <img src="https://via.placeholder.com/200x250?text=Camisa" alt="Camisa" />
+                <h3>Camisa Casual</h3>
+                <p>Camisa confortável para o dia a dia.</p>
+                <p><strong>R$ 79,90</strong></p>
+            </div>
+            <div class="produto">
+                <img src="https://via.placeholder.com/200x250?text=Vestido" alt="Vestido" />
+                <h3>Vestido Elegante</h3>
+                <p>Vestido perfeito para festas e eventos.</p>
+                <p><strong>R$ 129,90</strong></p>
+            </div>
+            <div class="produto">
+                <img src="https://via.placeholder.com/200x250?text=Calça" alt="Calça" />
+                <h3>Calça Jeans</h3>
+                <p>Calça jeans clássica e durável.</p>
+                <p><strong>R$ 99,90</strong></p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato">
+        <h2>Contato</h2>
+        <form action="#" method="post">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required />
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>Obrigado por escolher a Loja de Roupas Fashion! Volte sempre.</p>
+    </footer>
+</body>
+</html>

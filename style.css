@@ -1,0 +1,100 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo da página */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #f8f0fc, #fff0f6);
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #d6336c;
+    color: #fff;
+    padding: 30px 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(214, 51, 108, 0.4);
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+header h1 {
+    font-size: 2.8rem;
+    letter-spacing: 2px;
+    margin-bottom: 8px;
+}
+header p {
+    font-size: 1.2rem;
+    font-style: italic;
+    opacity: 0.9;
+}
+
+/* Seções */
+section {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 30px 40px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+}
+section:hover {
+    transform: translateY(-5px);
+}
+
+section h2 {
+    color: #d6336c;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    border-bottom: 3px solid #d6336c;
+    padding-bottom: 8px;
+}
+
+/* Produtos */
+.produtos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+.produto {
+    background: #fff0f6;
+    border-radius: 15px;
+    width: 220px;
+    padding: 15px;
+    box-shadow: 0 8px 15px rgba(214, 51, 108, 0.15);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+.produto:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(214, 51, 108, 0.35);
+}
+.produto img {
+    border-radius: 12px;
+    max-width: 100%;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 8px rgba(214, 51, 108, 0.2);
+}
+.produto h3 {
+    color: #a52e5f;
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+}
+.produto p {
+    font-size: 0.95rem;
+    margin-bottom: 12px;
+    color: #5e2b3b;
+}
+.produto strong {
+    font-size: 1.1rem;
+    color: #d6336c;
+}
+
