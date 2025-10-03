@@ -1,0 +1,19 @@
+{
+    "name": "Loja Roupas DevContainer",
+    "image": "mcr.microsoft.com/devcontainers/base:ubuntu-24.04",
+    "features": {},
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-vscode.vscode-typescript-next",
+                "esbenp.prettier-vscode",
+                "dbaeumer.vscode-eslint",
+                "eamodio.gitlens",
+                "ms-azuretools.vscode-docker"
+            ]
+        }
+    },
+    "mounts": [],
+    "postCreateCommand": "echo 'DevContainer pronto!'",
+    "remoteUser": "vscode"
+}
